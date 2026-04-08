@@ -25,12 +25,6 @@ void setup() {
   state = new float[w][h];
   buffer = new float[w][h];
   
-  for (int x = 0; x < w; x++) {
-    for (int y = 0; y < h; y++) {
-      state[x][y] = (x + y) / float(w + h);
-    }
-  }
-  
   colorMode(HSB, 1.0);
   background(0);
   frameRate(60);
